@@ -1,0 +1,127 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #9eddff;
+}
+
+.egg_1,
+.egg_2 {
+    height: 300px;
+    width: 230px;
+    background-color: #fff;
+    position: absolute;
+    margin: auto;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    box-shadow: 18px 0 rgba(0, 0, 0, 0.05);
+}
+
+.egg_2 {
+    left: 300px;
+    box-shadow: none;
+}
+
+.egg-yolk_1,
+.egg-yolk_2 {
+    height: 160px;
+    width: 160px;
+    background-color: #f5d201;
+    position: absolute;
+    margin: auto;
+    right: 0;
+    left: 0;
+    top: 75px;
+    bottom: 0;
+    border-radius: 50%;
+}
+
+.egg-yolk_2 {
+    left: 300px;
+}
+
+.egg-yolk_1::before,
+.egg-yolk_2::before {
+    content: "";
+    position: absolute;
+    height: 14px;
+    width: 14px;
+    background-color: #010008;
+    border-radius: 50%;
+    top: 70px;
+    right: 53px;
+    box-shadow: -40px 0 0 #010008, 10px 15px 3px -2px #f5700f,
+        -50px 15px 3px -2px #f5700f;
+}
+
+.egg-yolk_1::after {
+    content: "";
+    position: absolute;
+    height: 15px;
+    width: 25px;
+    background-color: #010008;
+    top: 95px;
+    left: 68px;
+    border-radius: 5px 5px 15px 15px;
+    border: 3px solid #010008;
+    background: radial-gradient(at 50% 90%, #f5700f 7px, #010008 8px);
+}
+
+.egg-yolk_2::after {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: #f5d201;
+    top: 85px;
+    left: 70px;
+    border-radius: 50%;
+    box-shadow: 0 5px 0 -1px #010008;
+}
+
+.shadow {
+    height: 32px;
+    width: 500px;
+    background: #07548d;
+    border-radius: 50%;
+    position: absolute;
+    margin: auto;
+    right: 0;
+    left: 140px;
+    top: 305px;
+    bottom: 0;
+    z-index: -1;
+}
+
+.bite_1,
+.bite_2,
+.bite_3 {
+    height: 30px;
+    width: 30px;
+    background: #9eddff;
+    border-radius: 50%;
+    position: absolute;
+    margin: auto;
+    right: 0;
+    left: 444px;
+    top: -187px;
+    bottom: 0;
+}
+
+.bite_2 {
+    left: 434px;
+    top: -229px;
+}
+
+.bite_3 {
+    left: 479px;
+    top: -158px;
+}
